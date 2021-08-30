@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>Vanilla challenge</title>
   </head>
-  <body id="change-background">
-    <h1>Hello!</h1>
+  <body>
+    <form id="login-form">
+      <input
+        type="text"
+        placeholder="What is your name?"
+        maxlength="15"
+        required
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
     <script src="app.js"></script>
   </body>
 </html>

@@ -4,20 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- EN Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- KR Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Font -->
     <title>Vanilla challenge</title>
   </head>
   <body>
-    <form id="login-form">
-      <input
-        type="text"
-        placeholder="What is your name?"
-        maxlength="15"
-        required
-      />
-      <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <script src="app.js"></script>
+    <header>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="clock-ring"></div>
+      <div id="clock">Loading...</div>
+      <div id="quote">
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <form id="login-form" class="hidden">
+        <input
+          type="text"
+          placeholder="What is your name"
+          maxlength="15"
+          required
+        />
+        <button>Log In</button>
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </main>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c897394cb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS files -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

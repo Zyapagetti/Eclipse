@@ -1,0 +1,253 @@
+@import "reset.css";
+@import "variables.css";
+
+.hidden {
+  display: none;
+}
+
+body {
+  color: white;
+  font-family: "Jua", sans-serif;
+  font-weight: 800;
+  height: 100vh;
+  width: 100vw;
+  min-width: 750px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#bgImage {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: saturate(50%) grayscale(50%);
+  min-width: 750px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 0 100px 0;
+  height: 250px;
+}
+
+#quote {
+  width: 75%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 3px 3px black;
+}
+
+#quote div:last-child {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#clock-ring {
+  position: absolute;
+  top: 70px;
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(125deg, white, black 60%);
+  border-radius: 50%;
+}
+
+#clock {
+  position: absolute;
+  top: 93px;
+  font-size: 65px;
+  text-shadow: 5px 5px black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form {
+  position: absolute;
+  top: 310px;
+}
+
+#greeting {
+  position: absolute;
+  top: 350px;
+  font-size: 40px;
+  text-shadow: 5px 5px black;
+}
+
+form {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#login-form input {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px 10px;
+  margin: 30px 10px;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  width: 70%;
+  border-radius: 15px;
+}
+
+#todo-form input {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px 10px;
+  margin: 30px 10px;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  border-radius: 15px;
+}
+
+#login-form input:hover {
+  box-shadow: 0 0 20px white;
+}
+
+#todo-form input:hover {
+  box-shadow: 0 0 20px white;
+}
+
+#login-form input:focus {
+  outline: none;
+  background: white;
+}
+
+#todo-form input:focus {
+  outline: none;
+  background: white;
+}
+
+input::placeholder {
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+  font-family: "Jua", sans-serif;
+}
+
+#login-form button {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px 10px;
+  margin: 30px 10px;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  width: 20%;
+  border-radius: 15px;
+}
+
+#login-form button:hover {
+  box-shadow: 0 0 20px white;
+  background-color: white;
+  cursor: pointer;
+}
+
+#login-form button:active {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+#todo-form button:hover {
+  background-color: white;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+#todo-form button:active {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  width: 580px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  color: black;
+  margin-bottom: 80px;
+  height: 680px;
+  overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+ul button:hover {
+  background-color: white;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+ul button:active {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+li:before {
+  content: "\f186";
+  font-family: FontAwesome;
+  font-size: 15px;
+  color: rgb(73, 75, 0);
+  margin-left: 20px;
+  text-shadow: 0 0 13px black;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px 0;
+  padding: 15px 0;
+  font-size: 20px;
+  width: 90%;
+  border-bottom: 2px solid white;
+}
+
+li span {
+  margin: 0 15px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  word-break: break-all;
+}
+
+li button {
+  background: none;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding: 5px 12px;
+}
+
+#weather {
+  position: absolute;
+  top: 195px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 1px 1px black;
+}

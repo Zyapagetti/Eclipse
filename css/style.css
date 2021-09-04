@@ -54,17 +54,27 @@ header {
 #clock-ring {
   position: absolute;
   top: 70px;
-  width: 110px;
-  height: 110px;
-  background: linear-gradient(125deg, white, black 60%);
+  width: 115px;
+  height: 115px;
+  background: linear-gradient(125deg, white, black 70%);
+  box-shadow: 0 0 30px white;
   border-radius: 50%;
 }
 
 #clock {
   position: absolute;
-  top: 93px;
+  top: 80px;
   font-size: 65px;
+  font-weight: 100;
   text-shadow: 5px 5px black;
+}
+
+#meridiem {
+  position: absolute;
+  top: 148px;
+  font-size: 20px;
+  font-weight: 100;
+  text-shadow: 2px 2px black;
 }
 
 main {
@@ -76,13 +86,6 @@ main {
 #login-form {
   position: absolute;
   top: 310px;
-}
-
-#greeting {
-  position: absolute;
-  top: 350px;
-  font-size: 40px;
-  text-shadow: 5px 5px black;
 }
 
 form {
@@ -102,6 +105,33 @@ form {
   color: black;
   width: 70%;
   border-radius: 15px;
+}
+
+#greeting {
+  position: absolute;
+  top: 350px;
+  font-size: 30px;
+  font-weight: 100;
+  text-shadow: 2px 2px black;
+}
+
+#logout-btn {
+  position: absolute;
+  top: 395px;
+  background: rgba(255, 255, 255, 0.75);
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px gray;
+}
+
+#logout-btn:hover {
+  box-shadow: 0 0 20px white;
+  background: white;
 }
 
 #todo-form input {
@@ -185,7 +215,7 @@ ul {
   border-radius: 15px;
   color: black;
   margin-bottom: 80px;
-  height: 680px;
+  height: 700px;
   overflow-y: scroll;
 }
 
@@ -245,7 +275,7 @@ li button {
 
 #weather {
   position: absolute;
-  top: 195px;
+  top: 30px;
   font-size: 15px;
   text-align: center;
   font-weight: 400;

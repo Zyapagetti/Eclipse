@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 #bgImage {
   position: fixed;
   top: 0;
-  z-index: -1;
+  z-index: -999;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -54,12 +54,15 @@ header {
 
 #clock-ring {
   position: absolute;
-  top: 70px;
-  width: 115px;
-  height: 115px;
-  background: linear-gradient(125deg, white, black 70%);
-  box-shadow: 0 0 30px white;
-  border-radius: 50%;
+  top: 60px;
+  z-index: -1;
+}
+
+#clock-ring img {
+  object-fit: cover;
+  width: 130px;
+  height: 130px;
+  filter: brightness(70%) contrast(85%) drop-shadow(0 0 20px gray);
 }
 
 #clock {
@@ -75,7 +78,7 @@ header {
   top: 148px;
   font-size: 20px;
   font-weight: 100;
-  text-shadow: 2px 2px black;
+  text-shadow: 3px 3px black;
 }
 
 main {

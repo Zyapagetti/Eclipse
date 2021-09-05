@@ -30,7 +30,8 @@ if (savedUsername === null) {
   paintGreetings(savedUsername);
 }
 
-function logout() {
+function logout(event) {
+  event.preventDefault();
   const loginID = loginInput.value;
   localStorage.removeItem("USERNAME_KEY", loginID);
   loginForm.classList.remove(HIDDEN_CLASSNAME);
